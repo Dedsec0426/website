@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .menu-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu-item a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .menu-item:not(:last-child) a {
+            border-bottom: 1px solid #fff;
+        }
+        
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            header, nav, section, footer, .column {
+                padding: 10px;
+            }
+            
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="#">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="#content">Portfolio</a>
+            </div>
+            <div class="menu-item">
+                <a href="#footer">Contact</a>
+            </div>
+            <div class="menu-item">
+                <a href="#">About Us</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="content">
+        <h2>Content Section</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Column 1</h3>
+                <p>This is the content of column 1.</p>
+            </div>
+            <div class="column">
+                <h3>Column 2</h3>
+                <p>This is the content of column 2.</p>
+            </div>
+            <div class="column">
+                <h3>Column 3</h3>
+                <p>This is the content of column 3.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-us">
+        <h2>About Us Section</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Column 1</h3>
+                <p>This is the content of column 1 in the About Us section.</p>
+            </div>
+            <div class="column">
+                <h3>Column 2</h3>
+                <p>This is the content of column 2 in the About Us section.</p>
+            </div>
+            <div class="column">
+                <h3>Column 3</h3>
+                <p>This is the content of column 3 in the About Us section.</p>
+            </div>
+            <div class="column">
+                <h3>Column 4</h3>
+                <p>This is the content of column 4 in the About Us section.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <p>Contact Us</p>
+    </footer>
+</body>
+</html>
